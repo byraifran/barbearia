@@ -1,0 +1,32 @@
+header{
+}
+.header-container{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 45px; 
+}
+.header h1 {
+    width: 235px;
+}
+.header-logo {
+    cursor: pointer;
+    width: 235px;
+}
+.header-menu-lista{
+    display: flex;
+    justify-content: space-around;
+    gap: 45px;
+}
+.header-menu-lista a{
+    color: var(--cor-terciaria);
+    font-size: 25px;
+    text-decoration: none;
+    padding: 15px;
+}
+.header-menu-lista a:hover{
+    background-color: var(--cor-secundaria);
+    color: #f4f1e9;
+    cursor: pointer;
+    transition: 0.3s all;
+}
