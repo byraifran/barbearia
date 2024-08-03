@@ -43,3 +43,38 @@ footer ul li a:hover {
     background-color: var(--cor-terciaria);
     color: var(--cor-secundaria);
 }
+@media screen and (min-width: 480px) and (max-width: 800px){
+    footer{
+        padding: 15px 45px;
+    }
+    footer ul {
+        align-items: center;
+        display: flex;
+        font-size: 10px;
+        justify-content: center;
+        gap: 8px;
+    }
+    .footer-container:first-child{
+        font-size: 10px;
+    }
+    .copyright {
+        font-size: 8px;
+        padding-top: 15px;
+    }
+    .footer-logo {
+        width: 100px;
+    }
+    .botao-up {
+       display: none;
+    }
+    .botao-up a{
+        display: none;
+    }
+    .fa-arrow-up {
+        padding: 10px;
+        background-color: white;
+        border-radius: 100%;
+        background-color: var(--cor-terciaria);
+        color: var(--cor-secundaria);
+    }
+}

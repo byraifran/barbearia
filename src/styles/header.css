@@ -1,5 +1,3 @@
-header{
-}
 .header-container{
     align-items: center;
     display: flex;
@@ -29,4 +27,25 @@ header{
     color: #f4f1e9;
     cursor: pointer;
     transition: 0.3s all;
+}
+@media screen and (min-width: 480px) and (max-width: 800px){
+    .header-container {
+        display: block;
+        text-align: center;
+        margin: 0 15px;
+    }
+    .header h1 {
+        width: auto;
+}
+    .header-logo {
+        cursor: pointer;
+        width: 68px;
+}
+    .header-menu-lista{
+        display: block;
+}
+    .header-menu-lista a{
+       font-size: 10px;
+       padding: 8px;
+}
 }
