@@ -1,3 +1,6 @@
+@import url('header.css');
+@import url('main.css');
+@import url('footer.css');
 :root{
     --fonte-primaria: "Alfa Slab One", serif;
     --fonte-secundaria: "Montserrat", sans-serif;
@@ -5,9 +8,5 @@
     --cor-secundaria: #ef6950;
     --cor-terciaria: #1e1a17;
 }
-
 body {
-    background-color: #f4f1e9;
-    font-family: var(--fonte-primaria);
-    line-height: 1.5;
 }

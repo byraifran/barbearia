@@ -1,170 +1,169 @@
-.main-banner{
+.main-banner {
     background-image: url('../assets/banner.jpg');
-    height: 60vh;
     background-repeat: no-repeat;
-    background-size: cover;
     background-position: center;
-    background-attachment: fixed;
+    background-size: cover;
+    height: 50vh;
+    max-width: 1440px;
 }
-.main-sobre,
-.main-mapa,
-.main-servicos{
-    margin: 45px;
-}
-.sobre-texto {
-    font-size: 18px;
-    font-family: var(--fonte-secundaria);
-    text-align: justify;
-}
-.sobre-titulo,
-.mapa-titulo,
-.servicos-titulo{
-    color: var(--cor-secundaria);
-    font-size: 35px;
-    text-align: center;
-    padding: 16px 0;
-}
-.sobre-titulo p,
-.mapa-titulo p ,
-.servicos-titulo p{
-    font-family: var(--fonte-secundaria);
-}
-.mapa-conteudo{
-    text-align: center;
-    width: 850px;
-    height: 450px;
-}
-.main-servicos{
-    padding: 35px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-}
-.servicos-tipos{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    text-align: center;
-}
-.servicos-tipos li{
-    width: 250px;
-    padding: 35px;
-}
-.servicos-tipos li:hover{
-    border: 3px solid var(--cor-secundaria);
-    width: 255px;
-    transition:ease-in;
-}
-
-.servicos-tipos li :nth-child(3){
-    font-family: var(--fonte-secundaria);
-}
-.servicos-tipos img{
-    margin: 15px 0;
-}
-.servicos-agendamento{
-    max-width: 650px;
-    margin: 150px 0;
-    font-size: 28px;
-}
-fieldset{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-fieldset legend {
-    margin: 25px 0;
-    text-align: center;
-}
-fieldset input {
-    width: 650px;
-    padding: 10px;
-    text-align: center;
-    border: none;
-    font-size: 18px;
-}
-input[value]{
-    width: 250px;
-    margin: 0 auto; /*centralizar input*/
-    background-color: var(--cor-terciaria);
-    border: none;color: #f4f1e9;
-}
-.main-video{
-    margin: 45px 0;
-    text-align: center;
-    width:660px;
-    height:415px;
-}
-@media screen and (min-width: 480px) and (max-width: 800px){
-    .main-banner{
-        width: 100%;
-        max-height: 150px;
-        background-position: center;
-        background-attachment:scroll;
-        margin: 0 auto;
-}
-    .main-sobre,
-    .main-mapa,
-    .main-servicos{
-        margin: 25px;
-}
-.sobre-texto {
-    font-size: 10px;
-}
-.sobre-titulo,
-.mapa-titulo,
-.servicos-titulo{
-    font-size: 12px;
-    padding: 10px 0;
-}
-.mapa-conteudo{
-    width: 300px;
-    height: 150px;
-    margin: 0 auto;
-}
-.main-servicos{
-    display: block;
-}
-.servicos-tipos{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.servicos-tipos li{
-    width: 150px;
+.sobre, .mapa, .servicos, .agendamento, .videos {
     padding: 25px;
 }
-.servicos-tipos li img{
-    margin: 5px 0;
-    width: 150px;
+.sobre-titulo, .mapa-titulo, .servicos-titulo, .agendamento-titulo, .videos-titulo {
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-primaria);
+    font-size: 30px;
+    text-align: center;
 }
-.servicos-tipos li h3,
-.servicos-tipos li p{
-    font-size: 12px;
-    margin: 5px 0;
+.sobre-texto {
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: justify;
 }
-.servicos-agendamento{
-    max-width: 150px;
-    margin: 50px 0;
-    font-size: 12px;
-    margin: 0 auto;
+.mapa-conteudo {
+    max-width: 1440px;
+    text-align: center;
+}
+.mapa-conteudo iframe {
+    height: 440px;
+    width:80%;
+}
+.servicos-lista {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    max-width: 1440px;
+    padding-right: 42px;
+}
+.servicos-item {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    margin: 0 20px;
+    max-width: 250px;
+    padding: 0 20px;
+    text-align: center;
+
+}
+.servicos-item h3 {
+    font-size: 20px;
+    padding-top: 32px;
+}
+.servicos-imagem {
+    max-width: 132px;
+}
+.servicos-item span:last-child {
+    background-color: var(--cor-secundaria);
+    color: #fff;
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 5px;
+    width: 100%;
+}
+.agendamento-form {
+    padding: 68px 0;
+}
+fieldset {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
 }
 fieldset input {
-    width: 150px;
+    border: 1px solid var(--cor-secundaria);
+    border-radius: 5px;
     padding: 5px;
     text-align: center;
-    border: none;
-    font-size: 12px;
+    width: 350px;
 }
-input[value]{
-    width: 130px;    
+fieldset input[type=submit] {
+    background-color: var(--cor-secundaria);
+    border: 1px solid transparent;
+    color: #fff;
+    width: 10%;
 }
-.main-video{
-    width: auto;
-    margin: 15px 0;
+fieldset input[type=submit]:hover {
+    background-color: var(--cor-terciaria);
+    color: #fff;
+    transition: .3s all;
+}
+.videos {
     text-align: center;
-    max-height: 150px;
+    padding: 25px;
 }
+@media screen and (min-width: 320px) and (max-width: 600px){
+    .main-banner {
+        background-image: url('../assets/banner.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 128px;
+        max-width: 600px;
+    }
+    .sobre, .mapa, .servicos, .agendamento, .videos {
+        padding: 10px;
+    }
+    .sobre-titulo, .mapa-titulo, .servicos-titulo, .agendamento-titulo, .videos-titulo {
+        color: var(--cor-secundaria);
+        font-family: var(--fonte-primaria);
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .sobre-texto {
+        font-size: 10px;
+        line-height: 1.5;
+        text-align: justify;
+    }
+    .mapa-conteudo {
+        max-width: 600px;
+        text-align: center;
+    }
+    .mapa-conteudo iframe {
+        width:50%;
+        height: auto;
+    }
+    .servicos-lista {
+        max-width: 600px;
+        padding-right: 32px;
+    }
+    .servicos-item {
+        align-items: center;
+        display: flex;
+        font-size: 10px;
+        flex-direction: column;
+    }
+    .servicos-item h3 {
+        font-size: 14px;
+        padding-top: 32px;
+    }
+    .servicos-imagem {
+        max-width: 128px;
+    }
+    .servicos-item span:last-child {
+        color: var(--cor-secundaria);
+        font-size: 11.5px;
+        font-weight: bold;
+    }
+    fieldset {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+    }
+    fieldset input {
+        text-align: center;
+        width: 128px;
+        font-size: small;
+    }
+    .videos {
+        text-align: center;
+    }
+    .videos iframe {
+        width: 50%;
+    } 
 }
