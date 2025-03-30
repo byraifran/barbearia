@@ -1,71 +1,83 @@
-.main-banner {
+.main_banner {
     background-image: url('../assets/banner.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 50vh;
-    max-width: 1440px;
+    height: 70vh;
 }
-.sobre, .mapa, .servicos, .agendamento, .videos {
-    padding: 25px;
+.main_sobre,
+.main_mapa,
+.main_servicos,
+.main_agendamento,
+.main_videos {
+    
+    padding: 45px 250px;
+
 }
-.sobre-titulo, .mapa-titulo, .servicos-titulo, .agendamento-titulo, .videos-titulo {
-    color: var(--cor-secundaria);
-    font-family: var(--fonte-primaria);
-    font-size: 30px;
+.main_sobre_titulo,
+.main_mapa_titulo,
+.main_servicos_titulo,
+.main_agendamento_titulo,
+.main_videos_titulo {
+    color: var(--color-green);
+    font-family: var(--primary-font);
+    font-size: 45px;
+    padding: 25px 0;
     text-align: center;
 }
-.sobre-texto {
+.main_sobre_texto {
+    font-family: var(--second-font);
     font-size: 20px;
+    font-weight: 300;
     line-height: 1.5;
     text-align: justify;
 }
-.mapa-conteudo {
+.main_mapa_conteudo {
     max-width: 1440px;
     text-align: center;
 }
-.mapa-conteudo iframe {
+.main_mapa_conteudo iframe {
     height: 440px;
-    width:80%;
+    width:100%;
 }
-.servicos-lista {
+.main_servicos_lista {
     align-items: center;
+    color: var(--color-green);
     display: flex;
-    justify-content: center;
-    max-width: 1440px;
-    padding-right: 42px;
+    font-family: var(--second-font);
+    justify-content: space-between;
 }
-.servicos-item {
+.main_servicos_item {
     align-items: center;
     display: flex;
     flex-direction: column;
-    font-size: 16px;
-    margin: 0 20px;
+    margin: 20px;
     max-width: 250px;
     padding: 0 20px;
     text-align: center;
-
 }
-.servicos-item h3 {
-    font-size: 20px;
+.main_servicos_item h3 {
+    font-size: 25px;
     padding-top: 32px;
 }
-.servicos-imagem {
+.main_servicos_imagem {
     max-width: 132px;
 }
-.servicos-item span:last-child {
-    background-color: var(--cor-secundaria);
-    color: #fff;
+.main_servicos_item span:last-child {
+    background-color: var(--color-green);
+    color: var(--color-white);
     display: block;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bold;
     margin-top: 5px;
+    padding: 10px;
     width: 100%;
 }
-.agendamento-form {
+.main_agendamento_form {
     padding: 68px 0;
+    margin: 20px 0;
 }
-fieldset {
+.main_agendamento_form fieldset {
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -73,28 +85,30 @@ fieldset {
     justify-content: center;
 }
 fieldset input {
-    border: 1px solid var(--cor-secundaria);
-    border-radius: 5px;
-    padding: 5px;
+    background-color: var(--color-orange);
+    border: transparent;
+    font-family: var(--second-font);
+    padding: 10px;
     text-align: center;
-    width: 350px;
+    width: 450px;
 }
 fieldset input[type=submit] {
-    background-color: var(--cor-secundaria);
-    border: 1px solid transparent;
-    color: #fff;
-    width: 10%;
-}
-fieldset input[type=submit]:hover {
-    background-color: var(--cor-terciaria);
-    color: #fff;
+    background-color: var(--color-green);
+    color: var(--color-white);
+    width: 250px;
     transition: .3s all;
 }
-.videos {
-    text-align: center;
-    padding: 25px;
+fieldset input[type=submit]:hover {
+    background-color: var(--color-orange);
+    color: var(--color-text);
 }
-@media screen and (min-width: 320px) and (max-width: 600px){
+.main_videos {
+    text-align: center;
+}
+.main_frame{
+    padding: 25px 0;
+}
+/*@media screen and (min-width: 320px) and (max-width: 600px){
     .main-banner {
         background-image: url('../assets/banner.jpg');
         background-repeat: no-repeat;
@@ -166,4 +180,4 @@ fieldset input[type=submit]:hover {
     .videos iframe {
         width: 50%;
     } 
-}
+}*/

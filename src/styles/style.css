@@ -1,12 +1,11 @@
 @import url('header.css');
 @import url('main.css');
 @import url('footer.css');
-:root{
-    --fonte-primaria: "Alfa Slab One", serif;
-    --fonte-secundaria: "Montserrat", sans-serif;
-    --cor-principal: #0D0D0D;
-    --cor-secundaria: #ef6950;
-    --cor-terciaria: #1e1a17;
-}
-body {
+:root {
+    --primary-font: "Bebas Neue", sans-serif;;
+    --second-font: "Poppins", sans-serif;
+    --color-text: #252422;
+    --color-green: #283618;
+    --color-orange: #DDA15E;
+    --color-white: #FEFAE0;
 }
