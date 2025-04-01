@@ -52,9 +52,12 @@
     display: flex;
     flex-direction: column;
     margin: 20px;
-    max-width: 250px;
-    padding: 0 20px;
+    max-width: 260px;
     text-align: center;
+}
+.main_servicos_item {
+    border: 1px solid var(--color-orange);
+    background-color: rgba(96, 108, 56, .1);
 }
 .main_servicos_item h3 {
     font-size: 25px;
@@ -70,7 +73,7 @@
     font-size: 18px;
     font-weight: bold;
     margin-top: 5px;
-    padding: 10px;
+    padding: 15px;
     width: 100%;
 }
 .main_agendamento_form {
@@ -107,6 +110,13 @@ fieldset input[type=submit]:hover {
 }
 .main_frame{
     padding: 25px 0;
+}
+.mensagem {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 18px;
+    color: var(--color-text);
+    font-style: italic;
 }
 /*@media screen and (min-width: 320px) and (max-width: 600px){
     .main-banner {

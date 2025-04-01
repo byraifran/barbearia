@@ -25,10 +25,10 @@
                 <nav class="menu_navbar">
                     <ul class="menu_navbar_lista">
                         <li>
-                            <a href="#form">Agendamento</a>
+                            <a href="#agendamento">Agendamento</a>
                         </li>
                         <li>
-                            <a href="#main-servicos">Serviços</a>
+                            <a href="#servicos">Serviços</a>
                         </li>
                         <li>
                             <a href="#footer">Contato</a>
@@ -47,13 +47,7 @@
                 <p>Se você está procurando um lugar onde possa relaxar e sair com um visual renovado, a Barbearia Estilo & Elegância é a escolha perfeita. </p>
             </div>
         </section>
-        <section class="main_mapa">
-            <h2 class="main_mapa_titulo">Nossa localização</h2>
-            <div class="main_mapa_conteudo">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63706.90802065202!2d-45.45373856875004!3d-3.659784899999993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x92ca9d1b0a85e151%3A0xd0c720d8de2110e2!2sBarbearia%2CSocial%20Club!5e0!3m2!1spt-BR!2sbr!4v1722552575746!5m2!1spt-BR!2sbr" "border:0;" allowfullscreen="true" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-        </section>
-       <section class="main_servicos" id="servicos">
+        <section class="main_servicos" id="servicos">
             <h2 class="main_servicos_titulo">Serviços e valores</h2>
             <article class="main_servicos_container">
                 <ul class="main_servicos_lista">
@@ -78,38 +72,48 @@
                 </ul>
             </article>
         </section>
-         <section class="main_agendamento">
+        <section class="main_videos">
+            <h3 class="main_videos_titulo">Cortes</h3>
+            <div class="main_frame">
+                <iframe width="460" height="215" src="https://www.youtube.com/embed/8EuOIW34CuQ?si=gkjAyw4C2kS-F2yu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe width="460" height="215" src="https://www.youtube.com/embed/qcsCScmumUo?si=Es5BnSNZZrVdjk4h" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe width="460" height="215" src="https://www.youtube.com/embed/jTGjZdy1Rt0?si=zZg74633KCgdRKuo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe width="460" height="215" src="https://www.youtube.com/embed/E5zgjQDUbdY?si=xwAicqMBnGVWVmY-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>    
+        </section>
+         <section class="main_agendamento" id="agendamento">
             <h3 class="main_agendamento_titulo">Agendamento</h3>
+            <div class="mensagem">fff</div>
             <form action="#" class="main_agendamento_form">
                 <fieldset>
-                    <input type="text" name="nome" id="nome" onblur="desfazerCor(this)" onfocus="alteraCor(this)" placeholder="Nome">
-                    <input type="date" name="dia" id="dia" onblur="desfazerCor(this)" onfocus="alteraCor(this)">
-                    <input type="time" name="horario" id="horario" min="08:00" max="18:00" onblur="desfazerCor(this)" onfocus="alteraCor(this)">
-                    <input type="submit" value="Agendar" onclik = "preventDefault()"  title="Em desenvolvimento">
+                    <input type="text" name="nome" id="nome" placeholder="Primeiro nome">
+                    <input type="date" name="dia" id="dia">
+                    <input type="time" name="horario" id="horario" min="08:00" max="18:00">
+                    <input type="submit" value="Agendar" id="submit">
                 </fieldset>
             </form>
         </section>
-        <section class="main_videos">
-            <h3 class="main_videos_titulo">Tutoriais</h3>
-            <div class="main_frame">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/E5zgjQDUbdY?si=xwAicqMBnGVWVmY-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>    
+        
+        <section class="main_mapa">
+            <h2 class="main_mapa_titulo">Nossa localização</h2>
+            <div class="main_mapa_conteudo">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63706.90802065202!2d-45.45373856875004!3d-3.659784899999993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x92ca9d1b0a85e151%3A0xd0c720d8de2110e2!2sBarbearia%2CSocial%20Club!5e0!3m2!1spt-BR!2sbr!4v1722552575746!5m2!1spt-BR!2sbr" "border:0;" allowfullscreen="true" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
         </section>
     </main>
-    <footer class="footer">
+    <footer class="footer" id="footer">
         <div class="footer_social">
             <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
                 <i class="fa-brands fa-instagram"></i>
             </a>
-            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.whatsapp.com/" target="_blank" rel="noopener noreferrer">
                 <i class="fa-brands fa-whatsapp"></i>
             </a>
-            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer">
                 <i class="fa-brands fa-tiktok"></i>
             </a>
         </div>
-        <address>R. Arlindo Menezes, 100, Centro, Bom Jardim - MA</address>
-        <p class="copyright">Copyright&copy; 2024 - Todos os direitos reservados</p>
+        <p class="copyright">Copyright&copy; 2025 - Todos os direitos reservados</p>
     </footer>
 </body>
 </html>
