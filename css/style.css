@@ -5,3 +5,10 @@
     --fonte-primaria: "Roboto";
     --fonte-complementar: "Young Serif";
 }
+
+body {
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: var(--fonte-primaria);
+    line-height: 1.6;
+}
