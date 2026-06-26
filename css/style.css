@@ -11,4 +11,24 @@ body {
     font-weight: 400;
     font-family: var(--fonte-primaria);
     line-height: 1.6;
+    background-color: var(--cor-complementar);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 42px;
+}
+
+.header__logo img {
+    width: 120px;
+}
+
+.menu__lista {
+    display: flex;
+    gap: 72px;
+    font-size: 22px;
+    font-family: var(--fonte-complementar);
+    color: var(--cor-destaque);
 }
