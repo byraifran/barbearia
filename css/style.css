@@ -60,7 +60,7 @@ body {
 
 .sobre__titulo, 
 .beneficios__titulo,
-.produtos__titulo {
+.servicos__titulo {
     color: var(--cor-destaque);
     font-size: 42px;
     font-family: var(--fonte-complementar);
@@ -89,7 +89,7 @@ body {
     content: "✅ ";
 }
 
-.produtos__cards {
+.servicos__cards {
     display: flex;
     justify-content: center;
     align-items: center;
