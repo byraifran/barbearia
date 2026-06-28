@@ -53,12 +53,14 @@ body {
 }
 
 .main__sobre, 
-.main__beneficios {
+.main__beneficios,
+.main__produtos {
     padding: 42px 72px;
 }
 
 .sobre__titulo, 
-.beneficios__titulo {
+.beneficios__titulo,
+.produtos__titulo {
     color: var(--cor-destaque);
     font-size: 42px;
     font-family: var(--fonte-complementar);
@@ -85,4 +87,35 @@ body {
 }
 .lista__item--icon::before {
     content: "✅ ";
+}
+
+.produtos__cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 42px;
+}
+
+.lista__item--hover {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--cor-primaria);
+    padding: 32px;
+    max-width: 250px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.item__titulo {
+    color: var(--cor-complementar);
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.item__preco {
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--cor-destaque);
+    margin-top: 16px;
 }
