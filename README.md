@@ -12,7 +12,8 @@ Uma landing page moderna, elegante e totalmente responsiva desenvolvida para uma
 ## 📸 Demonstração
 
 ### Visão Geral da Página
-![Demonstração do Website](https://) 
+![Demonstração do Website](https://github.com/byraifran/barbearia/blob/main/.github/preview.png?raw=true)
+
 ---
 
 ## ✨ Funcionalidades
