@@ -21,7 +21,8 @@ body {
     padding: 0 42px;
 }
 
-.header__logo img {
+.header__logo img, 
+.footer__logo {
     width: 120px;
 }
 
@@ -118,4 +119,20 @@ body {
     font-weight: 500;
     color: var(--cor-destaque);
     margin-top: 16px;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    background-color: var(--cor-destaque);
+    padding-left: 42px;
+    margin-top: 42px;
+}
+
+.footer div {
+    text-align: center;
+    width: 100%;
+}
+.footer__copyright {
+    color: var(--cor-primaria);
 }
